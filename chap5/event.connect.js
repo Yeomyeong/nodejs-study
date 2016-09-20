@@ -4,6 +4,7 @@ process.on('exit', function (code) {
 
 process.on('uncaughtException', function (error){
   console.log('예외는 봐주겠다 -_-;;');
+  console.log(error);
 });
 
 var count = 0;
@@ -14,6 +15,6 @@ var test = function() {
   }
 
   setTimeout(test, 2000);
-  error.error.error();;
+  fuck.fuck();
 };
 setTimeout(test, 2000);
