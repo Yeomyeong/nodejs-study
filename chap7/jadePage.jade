@@ -1,0 +1,28 @@
+html
+  head
+    title Index Page
+    style.
+      * { margin:0px; padding:0px }
+      h1 { color:Red; }
+  body
+    // this is comment!
+    #header
+      h1 hello jade .. !
+      h2 Dr. #{name}
+      h2(style="display:none") its hidden title
+      h3= desc
+    hr
+    - for (var i=0; i<10; i++) {
+    .article
+      a(href="http://reimaginer.tistory.com", data-test="multiple Attribute")
+        Go to My blog
+    - }
+
+    script(src="https://code.jquery.com/jquery-1.12.4.js")
+    script.
+      $(document).ready(function() {
+        setTimeout(function() {
+          alert("show");
+          $('h2').show();
+        }, 1000)
+      });
