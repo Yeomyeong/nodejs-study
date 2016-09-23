@@ -8,7 +8,7 @@ process.emit('exit');
 process.emit('exit');
 
 console.log('프로그램 실행 중1');
-process.exit();
+process.exit(); //진짜 종료
 
 process.emit('exit');
 process.emit('exit');
