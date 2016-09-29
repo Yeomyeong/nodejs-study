@@ -2,7 +2,7 @@ var express = require('express');
 
 var app = express();
 
-app.use(express.static(__dirname + '/image'));
+app.use(express.static(__dirname + '/upload'));
 
 app.use(function(request, response) {
   response.send(
